@@ -177,6 +177,15 @@ img{max-width:100%;display:block}
 .proj.feat .flag{position:absolute;top:22px;right:26px;font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}
 .proj.feat h3{font-size:1.7rem}
 .proj.feat p{max-width:60ch}
+.code-cta{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:30px 32px;background:linear-gradient(120deg,var(--surface-2),var(--ink-2) 70%);display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;position:relative;overflow:hidden}
+.code-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0% 0%,var(--brass-soft),transparent 52%);opacity:.7;pointer-events:none}
+.cc-left{position:relative;z-index:2;max-width:62ch}
+.code-cta h3{font-family:'Bricolage Grotesque';font-weight:600;font-size:1.5rem;letter-spacing:-.01em;margin:12px 0 10px}
+.code-cta p{color:var(--bone-dim);font-size:.96rem}
+.code-cta .repo{font-family:'JetBrains Mono';font-size:.74rem;color:var(--muted);margin-top:12px;display:flex;align-items:center;gap:8px}
+.code-cta .repo .gd{width:7px;height:7px;border-radius:50%;background:var(--sage)}
+.code-cta .btn{position:relative;z-index:2;white-space:nowrap}
+@media(max-width:680px){.code-cta{padding:24px}}
 
 /* STACK */
 .stack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -288,6 +297,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offs
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">View selected work
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="./Farhad-Khan-CV.pdf" download class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download CV</a>
           <a href="#contact" class="btn btn-ghost">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>Get in touch</a>
           <a href="https://github.com/farhd4367" target="_blank" rel="noopener" class="btn btn-ghost">
@@ -413,6 +424,19 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offs
         <p>Tiered-commission loyalty system with a dynamic user-tree, plus an admissions tracker with automated notifications and dashboards.</p>
         <div class="stack"><span>Laravel</span><span>Queues</span><span>Dashboards</span></div>
       </article>
+    </div>
+
+    <div class="code-cta reveal">
+      <div class="cc-left">
+        <span class="eyebrow">// open source</span>
+        <h3>Want to see how I actually write code?</h3>
+        <p>user-wallet is a public reference repo &mdash; built to show my architecture, service-layer structure, naming and overall code style. Clone it, read it, judge the craft for yourself.</p>
+        <div class="repo"><span class="gd"></span>github.com/farhd4367/user-wallet</div>
+      </div>
+      <a href="https://github.com/farhd4367/user-wallet" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        Review the code
+      </a>
     </div>
   </div>
 </section>
